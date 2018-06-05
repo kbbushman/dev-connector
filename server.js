@@ -1,6 +1,7 @@
 const express = require('express');
 const mongoose = require('mongoose');
 const bodyParser = require('body-parser');
+const passport = require('passport');
 
 // Server Port
 const port = process.env.PORT || 5000;
@@ -24,7 +25,11 @@ mongoose.connect(db)
   .then(() => console.log('MongoDB connected...'))
   .catch(err => console.log(err));
 
-app.get('/', (req, res) => res.send('Hello World!'));
+// Passport Middleware
+app.use(passport.initialize());
+
+// Passport Config
+require('./config/passport.js')(passport);
 
 // Use routes
 app.use('/api/users', users);
