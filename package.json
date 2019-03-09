@@ -19,7 +19,7 @@
     "express": "^4.16.3",
     "gravatar": "^1.6.0",
     "jsonwebtoken": "^8.2.2",
-    "mongoose": "^5.1.4",
+    "mongoose": "^5.4.18",
     "nodemon": "^1.18.4",
     "passport": "^0.4.0",
     "passport-jwt": "^4.0.0",
