@@ -3,7 +3,9 @@ html {
   min-height: 100%;
 }
 body {
-  margin-bottom: 60px; /* Margin bottom by footer height */
+  font-family: sans-serif;
+  padding: 0;
+  margin: 0 0 60px; /* Margin bottom by footer height */
 }
 
 img {
