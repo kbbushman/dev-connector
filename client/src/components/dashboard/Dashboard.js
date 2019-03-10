@@ -32,7 +32,7 @@ class Dashboard extends Component {
             <ProfileActions />
             {/* TODO: experience and education */}
             <div style={{ marginBottom: '60px' }}>
-              <button onClick={this.handleDeleteClick} className="btn btn-dan">Delete My Account</button>
+              <button onClick={this.handleDeleteClick} className="btn btn-danger">Delete My Account</button>
             </div>
           </div>
         );
