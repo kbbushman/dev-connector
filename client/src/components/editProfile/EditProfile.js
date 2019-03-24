@@ -18,7 +18,7 @@ class CreateProfile extends Component {
     location: '',
     status: '',
     skills: '',
-    githubUsername: '',
+    githubusername: '',
     bio: '',
     twitter: '',
     facebook: '',
@@ -47,7 +47,7 @@ class CreateProfile extends Component {
       profile.company = !isEmpty(profile.company) ? profile.company : '';
       profile.website = !isEmpty(profile.website) ? profile.website : '';
       profile.location = !isEmpty(profile.location) ? profile.location : '';
-      profile.githubUsername = !isEmpty(profile.githubUsername) ? profile.githubUsername : '';
+      profile.githubusername = !isEmpty(profile.githubusername) ? profile.githubusername : '';
       profile.bio = !isEmpty(profile.bio) ? profile.bio : '';
       profile.social = !isEmpty(profile.social) ? profile.social : {};
       profile.twitter = !isEmpty(profile.social.twitter) ? profile.social.twitter : '';
@@ -64,7 +64,7 @@ class CreateProfile extends Component {
         location: profile.location,
         status: profile.status,
         skills: skillsCSV,
-        githubUsername: profile.githubUsername,
+        githubusername: profile.githubusername,
         bio: profile.bio,
         twitter: profile.twitter,
         facebook: profile.facebook,
@@ -91,7 +91,7 @@ class CreateProfile extends Component {
       location: this.state.location,
       status: this.state.status,
       skills: this.state.skills,
-      githubUsername: this.state.githubUsername,
+      githubusername: this.state.githubusername,
       bio: this.state.bio,
       twitter: this.state.twitter,
       facebook: this.state.facebook,
@@ -228,10 +228,10 @@ class CreateProfile extends Component {
                 />
                 <TextFieldGroup
                   placeholder="Github Username"
-                  name="githubUsername"
-                  value={this.state.githubUsername}
+                  name="githubusername"
+                  value={this.state.githubusername}
                   onChange={this.handleChange}
-                  error={errors.githubUsername}
+                  error={errors.githubusername}
                   info="If you want your latest repos and Github link, include your username"
                 />
                 <TextAreaFieldGroup
