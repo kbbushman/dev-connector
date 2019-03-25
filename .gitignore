@@ -1,3 +1,4 @@
 /node_modules
 /devconnector_theme
 package-lock.json
+/config/keys_dev.js
